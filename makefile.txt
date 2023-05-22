@@ -1,0 +1,7 @@
+obj-m := mydriver.o
+mydriver-objs :=device_driver.o
+
+KDIR := /lib/modules/$(shell uname -r)/build
+PWD := $(shell pwd)
+all:
+  make -C $(KDIR)  M=$(PWD) modules

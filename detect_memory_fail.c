@@ -25,12 +25,4 @@ When you run valgrind with the --leak-check=full option, it will detect any memo
 Note that this is just a basic example, and there are many other techniques and tools available for detecting memory leaks in C code, depending on the specifics of your application.
 
 
-gcc -g -o myprogram myprogram.c
-valgrind --leak-check=full ./myprogram
-
-
-When you run valgrind with the --leak-check=full option, it will detect any memory leaks in your code and report them in the output.
-
-Note that this is just a basic example, and there are many other techniques and tools available for detecting memory leaks in C code, depending on the specifics of your application.
-
 */
